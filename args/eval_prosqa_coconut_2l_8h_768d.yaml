@@ -1,0 +1,34 @@
+# need 2 gpus
+
+project: coconut
+save_path: ckpts
+name: "eval-prosqa-coconut-2l-8h-768d"
+
+only_eval: True
+
+coconut: True
+cot: False
+no_thoughts: False
+no_cot: False
+
+c_thought: 1
+epochs_per_stage: 25
+max_latent_stage: 4
+pad_latent_to_max: True
+
+save_only_improve: False
+uniform_prob: 0.1
+model_id: configs/symbol-2layer-8head-768dim.json
+load_model_path: PATH_TO_YOUR_CHECKPOINT
+seed: 0
+resume: 299
+bf16: False
+train_path: data/prosqa_train_graph_4_coconut.json
+val_path: data/prosqa_test_graph_4_coconut.json
+reset_optimizer: False
+batch_size_training: 128
+debug: False
+gradient_accumulation_steps: 1
+num_epochs: 300
+lr: !!float "1e-4"
+weight_decay: 0.01
