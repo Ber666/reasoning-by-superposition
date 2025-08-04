@@ -256,7 +256,7 @@ def main():
                     tokenizer,
                 )
             else:
-                dataset_train = get_graph_latent_question_dataset(
+                dataset_train = get_graph_latent_cot_dataset(
                     configs.train_path,
                     scheduled_stage,
                     configs,

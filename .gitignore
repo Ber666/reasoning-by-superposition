@@ -3,6 +3,5 @@ wandb
 ckpts/
 *.out
 *.err
-*.json
 *.png
 *.pdf
