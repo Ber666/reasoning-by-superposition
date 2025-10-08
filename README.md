@@ -1,5 +1,5 @@
 # Reasoning by Superposition  
-Official code for [**Reasoning by Superposition: A Theoretical Perspective on Chain of Continuous Thought**](https://arxiv.org/abs/2505.12514)
+Official code for [**Reasoning by Superposition: A Theoretical Perspective on Chain of Continuous Thought**](https://arxiv.org/abs/2505.12514) (NeurIPS 2025)
 
 
 ## Background
